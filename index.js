@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 5000;
 // temp database
 let tasks = [];
 
+const DB = "mera database";
+
 // Create a Task
 app.post("/tasks", (req, res) => {
   const task = {
