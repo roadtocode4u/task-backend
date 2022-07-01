@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 5000;
 // temp database
 let tasks = [];
 
-const DB = "mera database";
+const DB = process.env.MONGODB_URI;
+console.log(DB)
 
 // Create a Task
 app.post("/tasks", (req, res) => {
